@@ -55,6 +55,8 @@ dependencies {
   compile group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version:'2.8.5'
   compile 'com.wealdtech.hawk:hawk-client-jersey:1.0.0'
   compile 'com.mashape.unirest:unirest-java:1.4.9'
+  compile 'com.fasterxml.jackson.core:jackson-databind:2.9.4'
+  compile 'com.fasterxml.jackson.core:jackson-annotations:2.9.4'
   
 }
 
