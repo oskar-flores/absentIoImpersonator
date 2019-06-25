@@ -24,6 +24,10 @@ functions:
             type: COGNITO_USER_POOLS
             authorizerId:
               Ref: ApiGatewayAuthorizer
+    environment:
+      key: ${ssm:absentIokey}
+      id: ${ssm:absentIoId}
+
   stop:
     handler: com.serverless.Stop
     events:
@@ -34,6 +38,10 @@ functions:
             type: COGNITO_USER_POOLS
             authorizerId:
               Ref: ApiGatewayAuthorizer
+    environment:
+      key: ${ssm:absentIokey}
+      id: ${ssm:absentIoId}
+
   pause:
     handler: com.serverless.Pause
     events:
@@ -44,6 +52,9 @@ functions:
             type: COGNITO_USER_POOLS
             authorizerId:
               Ref: ApiGatewayAuthorizer
+    environment:
+      key: ${ssm:absentIokey}
+      id: ${ssm:absentIoId}
 
 resources:
   Resources:

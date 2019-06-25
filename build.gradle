@@ -31,6 +31,10 @@ apply plugin: "io.spring.dependency-management"
 apply plugin: 'com.github.johnrengelman.shadow'
 apply plugin: "de.sebastianboegl.shadow.transformer.log4j"
 
+shadowJar{
+  archiveFileName="${rootProject.name}-dev-all.jar"
+}
+
 repositories {
   maven { url "http://repo.maven.apache.org/maven2" }
 }

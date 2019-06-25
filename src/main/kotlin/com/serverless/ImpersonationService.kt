@@ -1,46 +1,101 @@
 package com.serverless
 
+import com.mashape.unirest.http.HttpResponse
+import com.mashape.unirest.http.JsonNode
 import com.mashape.unirest.http.ObjectMapper
 import com.mashape.unirest.http.Unirest
 import com.wealdtech.hawk.HawkClient
 import com.wealdtech.hawk.HawkCredentials
 import java.net.URI
 import java.time.LocalDateTime
+import java.time.ZoneId
+import java.time.ZonedDateTime
+import java.time.format.DateTimeFormatter
 
 class ImpersonationService {
-    fun startWork(id: String, key: String) {
-
-        val hawkCredentials = HawkCredentials.Builder()
-                .keyId(id)
-                .key(key)
-                .algorithm(HawkCredentials.Algorithm.SHA256)
-                .build()
-
-        val hawkClient = HawkClient.Builder().credentials(hawkCredentials).build()
+    fun start(id: String, type: String): HttpResponse<JsonNode>? {
 
 
-        val workTime = LocalDateTime.now()
+        val workTime = DateTimeFormatter.ISO_INSTANT.format(LocalDateTime.now().atZone(ZoneId.of("UTC")))
         val payload = mapOf(
                 "userId" to id,
                 "start" to workTime,
-                "end" to "2019-06-24T14:15:00.000Z",
                 "timezoneName" to "CEST",
                 "timezone" to "+0200",
-                "type" to "work")
+                "type" to type)
 
 
-        val generateAuthorizationHeader = hawkClient.generateAuthorizationHeader(URI.create("https://app.absence.io/api/v2/timespans/create"), "post", null, null, null, null)
+        val generateAuthorizationHeader = generateCredentials("https://app.absence.io/api/v2/timespans/create", "post")
 
         val response = Unirest.post("https://app.absence.io/api/v2/timespans/create")
                 .header("Authorization", generateAuthorizationHeader)
                 .header("Content-Type", "application/json")
                 .body(payload)
                 .asJson()
+
         System.out.println(response.body)
         System.out.println(response.status)
+
+        return response
+    }
+
+    fun pause() {
+        stop()
+        start(id, "break")
+    }
+
+
+     fun stop() {
+        val todayDate = LocalDateTime.now().atZone(ZoneId.of("UTC"))
+        val timeSpanId = getNewestTimespanIdForDate(todayDate)
+
+        val putCredentials = generateCredentials("https://app.absence.io/api/v2/timespans/$timeSpanId", "put")
+        val endDate = DateTimeFormatter.ISO_INSTANT.format(todayDate)
+
+        Unirest.put("https://app.absence.io/api/v2/timespans/$timeSpanId")
+                .header("Authorization", putCredentials)
+                .header("Content-Type", "application/json")
+                .body(mapOf(
+                        "end" to endDate
+                ))
+                .asJson()
+    }
+
+    private fun getNewestTimespanIdForDate(todayDate: ZonedDateTime): String {
+        val tomorrow = todayDate.plusDays(1).format(DateTimeFormatter.ISO_LOCAL_DATE)
+        val today = todayDate.format(DateTimeFormatter.ISO_LOCAL_DATE)
+        val gte = "\$gte"
+        val lt = "\$lt"
+
+        val payload = """{
+            "filter": {
+                "userId": "$id",
+                "start": {"\$gte": "$today"},
+                "end": {"\$lt": "$tomorrow"}
+            },
+            "sortBy":{
+                "start": -1
+            },
+            "limit": 10,
+            "skip": 0
+        }"""
+
+        val generateAuthorizationHeader = generateCredentials("https://app.absence.io/api/v2/timespans", "post")
+
+        val response = Unirest.post("https://app.absence.io/api/v2/timespans")
+                .header("Authorization", generateAuthorizationHeader)
+                .header("Content-Type", "application/json")
+                .body(payload)
+                .asJson()
+
+        val timespanId  = response.body.`object`.get("_id").toString()
+        return timespanId
     }
 
     companion object {
+        val id = System.getenv("id")
+        val key = System.getenv("key")
+
         fun init() {
             Unirest.setObjectMapper(object : ObjectMapper {
                 var mapper = com.fasterxml.jackson.databind.ObjectMapper()
@@ -54,10 +109,23 @@ class ImpersonationService {
                 }
             })
         }
+
+        fun generateCredentials(url: String, method: String): String {
+            val hawkCredentials = HawkCredentials.Builder()
+                    .keyId(id)
+                    .key(key)
+                    .algorithm(HawkCredentials.Algorithm.SHA256)
+                    .build()
+
+            val hawkClient = HawkClient.Builder().credentials(hawkCredentials).build()
+            return hawkClient.generateAuthorizationHeader(URI.create(url), method, null, null, null, null)
+        }
     }
 }
 
 fun main() {
     ImpersonationService.init()
     val service = ImpersonationService()
+    service.start(ImpersonationService.id, "work")
+
 }
