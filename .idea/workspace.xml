@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a5066b3-a398-4343-8a6a-79db2d4c67a9" name="Default Changelist" comment="">
-<<<<<<< HEAD
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-=======
       <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/serverless/Pause.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/serverless/Stop.kt" afterDir="false" />
@@ -15,7 +11,6 @@
       <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/serverless/ImpersonationService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/serverless/ImpersonationService.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/serverless/Start.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/serverless/Start.kt" afterDir="false" />
->>>>>>> b8efa83f6b4b39c9ffe05e5fa95ebd4e1ba2e6d7
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -83,161 +78,28 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/serverless/ApiGatewayResponse.kt">
-          <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="204">
-              <caret line="17" column="71" selection-start-line="17" selection-start-column="66" selection-end-line="17" selection-end-column="71" />
-=======
-            <state relative-caret-position="221">
-              <caret line="15" column="70" selection-start-line="15" selection-start-column="65" selection-end-line="15" selection-end-column="70" />
->>>>>>> b8efa83f6b4b39c9ffe05e5fa95ebd4e1ba2e6d7
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-<<<<<<< HEAD
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/serverless/Start.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="40" column="30" selection-start-line="17" selection-start-column="5" selection-end-line="41" />
-=======
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/serverless/Pause.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="11" column="44" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="11" selection-end-column="44" />
->>>>>>> b8efa83f6b4b39c9ffe05e5fa95ebd4e1ba2e6d7
-            </state>
-          </provider>
-        </entry>
-      </file>
-<<<<<<< HEAD
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/serverless/HawkSevice.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="608">
-              <caret line="37" selection-start-line="37" selection-end-line="37" />
-              <folding>
-                <element signature="e#24#272#0" expanded="true" />
-              </folding>
-=======
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/serverless/Stop.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
->>>>>>> b8efa83f6b4b39c9ffe05e5fa95ebd4e1ba2e6d7
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-<<<<<<< HEAD
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/serverless/GatewayResponse.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-=======
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/serverless/ImpersonationService.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="38" column="23" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
-              <folding>
-                <element signature="e#24#421#0" expanded="true" />
-              </folding>
->>>>>>> b8efa83f6b4b39c9ffe05e5fa95ebd4e1ba2e6d7
+            <state relative-caret-position="130">
+              <caret line="21" column="48" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-<<<<<<< HEAD
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/serverless/Response.kt">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
-=======
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/time/format/DateTimeFormatter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="1160" column="42" selection-start-line="1160" selection-start-column="42" selection-end-line="1160" selection-end-column="42" />
->>>>>>> b8efa83f6b4b39c9ffe05e5fa95ebd4e1ba2e6d7
+            <state relative-caret-position="8993">
+              <caret line="572" column="145" selection-start-line="572" selection-start-column="145" selection-end-line="572" selection-end-column="145" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-<<<<<<< HEAD
-        <entry file="file://$PROJECT_DIR$/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="833">
-              <caret line="49" column="15" selection-start-line="49" selection-start-column="15" selection-end-line="49" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gradlew">
+        <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
           <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
-=======
-        <entry file="file://$PROJECT_DIR$/gradlew">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="34" column="50" selection-start-line="34" selection-start-column="50" selection-end-line="34" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/serverless/ApiGatewayResponse.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="18" selection-end-column="3" />
->>>>>>> b8efa83f6b4b39c9ffe05e5fa95ebd4e1ba2e6d7
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/serverless.yml">
-<<<<<<< HEAD
-          <provider selected="true" editor-type-id="text-editor" />
-=======
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="819">
-              <caret line="57" selection-start-line="57" selection-end-line="57" />
-            </state>
-          </provider>
->>>>>>> b8efa83f6b4b39c9ffe05e5fa95ebd4e1ba2e6d7
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/settings.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="17">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-=======
-            <state>
-              <caret column="16" selection-end-column="16" />
->>>>>>> b8efa83f6b4b39c9ffe05e5fa95ebd4e1ba2e6d7
-            </state>
-          </provider>
         </entry>
       </file>
     </leaf>
@@ -245,11 +107,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-<<<<<<< HEAD
-        <option value="Kotlin File" />
-=======
         <option value="Kotlin Class" />
->>>>>>> b8efa83f6b4b39c9ffe05e5fa95ebd4e1ba2e6d7
       </list>
     </option>
   </component>
@@ -271,9 +129,9 @@
         <option value="$PROJECT_DIR$/serverless.yml" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/serverless/Pause.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/serverless/Stop.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/com/serverless/ImpersonationService.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/serverless/Start.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/serverless/HawkSevice.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/serverless/ImpersonationService.kt" />
       </list>
     </option>
   </component>
@@ -287,6 +145,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -297,10 +156,10 @@
             <path>
               <item name="absetIoImpersonator" type="b2602c69:ProjectViewProjectNode" />
               <item name="absentIoImpersonator" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="gradle" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="hello" type="b2602c69:ProjectViewProjectNode" />
+              <item name="absetIoImpersonator" type="b2602c69:ProjectViewProjectNode" />
               <item name="absentIoImpersonator" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -325,60 +184,10 @@
               <item name="kotlin" type="462c0819:PsiDirectoryNode" />
               <item name="serverless" type="462c0819:PsiDirectoryNode" />
             </path>
-<<<<<<< HEAD
-=======
-            <path>
-              <item name="absetIoImpersonator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="absentIoImpersonator" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="absetIoImpersonator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="absetIoImpersonator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="absetIoImpersonator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="absetIoImpersonator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="absetIoImpersonator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="time" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="absetIoImpersonator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="time" type="462c0819:PsiDirectoryNode" />
-              <item name="format" type="462c0819:PsiDirectoryNode" />
-            </path>
->>>>>>> b8efa83f6b4b39c9ffe05e5fa95ebd4e1ba2e6d7
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -413,11 +222,7 @@
       </list>
     </option>
   </component>
-<<<<<<< HEAD
-  <component name="RunManager">
-    <configuration name="com.serverless.HawkSeviceKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
-=======
-  <component name="RunManager" selected="Gradle.absentIoImpersonator [deploy]">
+  <component name="RunManager" selected="Kotlin.com.serverless.ImpersonationServiceKt">
     <configuration name="absentIoImpersonator [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -495,34 +300,36 @@
       <method v="2" />
     </configuration>
     <configuration name="com.serverless.ImpersonationServiceKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
->>>>>>> b8efa83f6b4b39c9ffe05e5fa95ebd4e1ba2e6d7
-      <module name="hello.main" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
+      <module name="absetIoImpersonator.main" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-<<<<<<< HEAD
-      <option name="MAIN_CLASS_NAME" value="com.serverless.HawkSeviceKt" />
-=======
       <option name="MAIN_CLASS_NAME" value="com.serverless.ImpersonationServiceKt" />
->>>>>>> b8efa83f6b4b39c9ffe05e5fa95ebd4e1ba2e6d7
-      <option name="WORKING_DIRECTORY" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <envs>
+        <env name="id" value="5beccfc485e573a6534e3b9e" />
+        <env name="key" value="dfd1c2b5b6af2925ee71ba97f8bf52cf34919cf5681820a6828c32de176c13e0" />
+      </envs>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Gradle.absentIoImpersonator [build]" />
+      <item itemvalue="Gradle.absentIoImpersonator [clean]" />
+      <item itemvalue="Gradle.absentIoImpersonator [deploy]" />
+      <item itemvalue="Gradle.absentIoImpersonator [shadowJar]" />
+      <item itemvalue="Kotlin.com.serverless.ImpersonationServiceKt" />
+    </list>
     <recent_temporary>
       <list>
-<<<<<<< HEAD
-        <item itemvalue="Kotlin.com.serverless.HawkSeviceKt" />
-=======
+        <item itemvalue="Kotlin.com.serverless.ImpersonationServiceKt" />
         <item itemvalue="Gradle.absentIoImpersonator [clean]" />
         <item itemvalue="Gradle.absentIoImpersonator [shadowJar]" />
         <item itemvalue="Gradle.absentIoImpersonator [deploy]" />
         <item itemvalue="Gradle.absentIoImpersonator [build]" />
-        <item itemvalue="Kotlin.com.serverless.ImpersonationServiceKt" />
->>>>>>> b8efa83f6b4b39c9ffe05e5fa95ebd4e1ba2e6d7
       </list>
     </recent_temporary>
   </component>
@@ -545,11 +352,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-<<<<<<< HEAD
-    <option name="totallyTimeSpent" value="5426000" />
-=======
-    <option name="totallyTimeSpent" value="15994000" />
->>>>>>> b8efa83f6b4b39c9ffe05e5fa95ebd4e1ba2e6d7
+    <option name="totallyTimeSpent" value="17570000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -561,53 +364,33 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-<<<<<<< HEAD
-    <frame x="0" y="31" width="2560" height="1409" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25575852" />
-=======
     <frame x="0" y="23" width="1920" height="1097" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1673774" />
->>>>>>> b8efa83f6b4b39c9ffe05e5fa95ebd4e1ba2e6d7
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24973376" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-<<<<<<< HEAD
-      <window_info anchor="bottom" id="Messages" weight="0.3293461" />
-      <window_info anchor="bottom" id="Build" order="0" sideWeight="0.49960285" weight="0.3293461" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" />
-      <window_info anchor="bottom" id="Run" order="3" />
-      <window_info active="true" anchor="bottom" id="Debug" order="4" visible="true" weight="0.39952153" />
-=======
-      <window_info anchor="bottom" id="Messages" weight="0.32924336" />
       <window_info anchor="bottom" id="Build" order="0" sideWeight="0.49960285" weight="0.32924336" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" />
-      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.32924336" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.3997955" />
->>>>>>> b8efa83f6b4b39c9ffe05e5fa95ebd4e1ba2e6d7
+      <window_info anchor="bottom" id="Run" order="3" weight="0.32924336" />
+      <window_info active="true" anchor="bottom" id="Debug" order="4" visible="true" weight="0.3991684" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.3293461" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-<<<<<<< HEAD
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3293461" />
-=======
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.23619632" />
->>>>>>> b8efa83f6b4b39c9ffe05e5fa95ebd4e1ba2e6d7
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50039715" side_tool="true" weight="0.3293461" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.3293461" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="13" />
       <window_info anchor="bottom" id="Statistic" order="14" />
       <window_info anchor="bottom" id="SonarLint" order="15" />
+      <window_info anchor="bottom" id="Messages" order="16" weight="0.32848233" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -617,11 +400,7 @@
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Database" order="8" />
-<<<<<<< HEAD
-      <window_info anchor="right" id="Gradle" order="9" visible="true" weight="0.32962668" />
-=======
       <window_info anchor="right" id="Gradle" order="9" visible="true" weight="0.21375267" />
->>>>>>> b8efa83f6b4b39c9ffe05e5fa95ebd4e1ba2e6d7
       <window_info anchor="right" id="Key Promoter X" order="10" />
       <window_info anchor="right" id="SciView" order="11" />
     </layout>
@@ -633,31 +412,62 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="kotlin-line">
-<<<<<<< HEAD
-          <url>file://$PROJECT_DIR$/src/main/kotlin/com/serverless/HawkSevice.kt</url>
-          <line>10</line>
-=======
           <url>file://$PROJECT_DIR$/src/main/kotlin/com/serverless/ImpersonationService.kt</url>
-          <line>127</line>
->>>>>>> b8efa83f6b4b39c9ffe05e5fa95ebd4e1ba2e6d7
+          <line>131</line>
           <properties />
-          <option name="timeStamp" value="1" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/com/serverless/ImpersonationService.kt</url>
+          <line>89</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/com/serverless/ImpersonationService.kt</url>
+          <line>57</line>
+          <properties />
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
-<<<<<<< HEAD
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>HawkAuthorizationFilter(hawkClient).toString()</expression-string>
+        <expression-string>&quot;https://app.absence.io/api/v2/timespans/$timeSpanId&quot;</expression-string>
+        <language-id>kotlin</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>&quot;https://app.absence.io/api/v2/timespans/$timeSpanId</expression-string>
+        <language-id>kotlin</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>&quot;https://app.absence.io/api/v2/timespans/\$timeSpanId</expression-string>
+        <language-id>kotlin</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>mapOf(
+                        &quot;end&quot; to endDate)</expression-string>
+        <language-id>kotlin</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>mapOf(
+                        &quot;end&quot; to endDate</expression-string>
+        <language-id>kotlin</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>(response.body.`object`.get(&quot;data&quot;) as JSONArray).getJSONObject(0).get(&quot;_id&quot;) as String?</expression-string>
         <language-id>kotlin</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
-=======
->>>>>>> b8efa83f6b4b39c9ffe05e5fa95ebd4e1ba2e6d7
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/gradlew.bat">
       <provider selected="true" editor-type-id="text-editor" />
@@ -684,38 +494,10 @@
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="49" column="15" selection-start-line="49" selection-start-column="15" selection-end-line="49" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serverless.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/time/format/DateTimeFormatter.java" />
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-lambda-java-core/1.1.0/e4543b35efeb6dbb2ddc7e63a0ee2e681e90c321/aws-lambda-java-core-1.1.0-sources.jar!/com/amazonaws/services/lambda/runtime/LambdaRuntime.java">
-=======
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/serverless/Response.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/serverless/GatewayResponse.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/serverless/ApiGatewayResponse.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="18" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -737,7 +519,6 @@
       </provider>
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/time/format/DateTimeFormatter.java">
->>>>>>> b8efa83f6b4b39c9ffe05e5fa95ebd4e1ba2e6d7
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
           <caret line="1160" column="42" selection-start-line="1160" selection-start-column="42" selection-end-line="1160" selection-end-column="42" />
@@ -767,11 +548,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/serverless/ImpersonationService.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="38" column="23" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
-          <folding>
-            <element signature="e#24#421#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="130">
+          <caret line="21" column="48" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
         </state>
       </provider>
     </entry>
@@ -791,30 +569,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/serverless/Start.kt">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="544">
-          <caret line="40" column="30" selection-start-line="17" selection-start-column="5" selection-end-line="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/serverless/GatewayResponse.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/serverless/HawkSevice.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-          <folding>
-            <element signature="e#24#272#0" expanded="true" />
-          </folding>
-=======
         <state relative-caret-position="221">
           <caret line="15" column="70" selection-start-line="15" selection-start-column="65" selection-end-line="15" selection-end-column="70" />
->>>>>>> b8efa83f6b4b39c9ffe05e5fa95ebd4e1ba2e6d7
         </state>
       </provider>
     </entry>

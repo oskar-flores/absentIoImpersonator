@@ -7,9 +7,9 @@ import com.mashape.unirest.http.Unirest
 import com.wealdtech.hawk.HawkClient
 import com.wealdtech.hawk.HawkCredentials
 import org.json.JSONArray
+import org.json.JSONObject
 import java.net.URI
 import java.time.Instant
-import java.time.LocalDateTime
 import java.time.ZoneId
 import java.time.ZonedDateTime
 import java.time.format.DateTimeFormatter
@@ -36,9 +36,6 @@ class ImpersonationService {
                 .body(payload)
                 .asJson()
 
-        System.out.println(response.body)
-        System.out.println(response.status)
-
         return response
     }
 
@@ -49,18 +46,19 @@ class ImpersonationService {
 
 
     fun stop(): HttpResponse<JsonNode>? {
-        val todayDate = LocalDateTime.now().atZone(ZoneId.of("UTC"))
+        val todayDate = ZonedDateTime.now(ZoneId.of("UTC"))
         val timeSpanId = getNewestTimespanIdForDate(todayDate)
 
         val putCredentials = generateCredentials("https://app.absence.io/api/v2/timespans/$timeSpanId", "put")
         val endDate = formatDate(todayDate.toInstant())
 
+        val payload = JSONObject()
+        payload.put("end", endDate)
+
         return Unirest.put("https://app.absence.io/api/v2/timespans/$timeSpanId")
                 .header("Authorization", putCredentials)
                 .header("Content-Type", "application/json")
-                .body(mapOf(
-                        "end" to endDate
-                ))
+                .body(payload)
                 .asJson()
     }
 
@@ -69,16 +67,16 @@ class ImpersonationService {
     }
 
     private fun getNewestTimespanIdForDate(todayDate: ZonedDateTime): String? {
-        val tomorrow = todayDate.plusDays(1).format(DateTimeFormatter.ISO_LOCAL_DATE)
         val today = todayDate.format(DateTimeFormatter.ISO_LOCAL_DATE)
         val gte = "\$gte"
-        val lt = "\$lt"
 
+        /*
+        Get all of today, with newest first. Hopefully we get the ongoin the first
+         */
         val payload = """{
             "filter": {
                 "userId": "$id",
-                "start": {"$gte": "$today"},
-                "end": {"$lt": "$tomorrow"}
+                "start": {"$gte": "$today"}
             },
             "sortBy":{
                 "start": -1
