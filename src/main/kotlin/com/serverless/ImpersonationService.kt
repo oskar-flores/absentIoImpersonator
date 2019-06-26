@@ -19,7 +19,7 @@ class ImpersonationService {
     fun start(id: String, type: String): HttpResponse<JsonNode>? {
 
 
-        val workTime =formatDate(Instant.now())
+        val workTime = formatDate(Instant.now())
         val payload = mapOf(
                 "userId" to id,
                 "start" to workTime,
@@ -42,20 +42,20 @@ class ImpersonationService {
         return response
     }
 
-    fun pause() {
+    fun pause(): HttpResponse<JsonNode>? {
         stop()
-        start(id, "break")
+        return start(id, "break")
     }
 
 
-     fun stop() {
+    fun stop(): HttpResponse<JsonNode>? {
         val todayDate = LocalDateTime.now().atZone(ZoneId.of("UTC"))
         val timeSpanId = getNewestTimespanIdForDate(todayDate)
 
         val putCredentials = generateCredentials("https://app.absence.io/api/v2/timespans/$timeSpanId", "put")
-        val endDate =formatDate(todayDate.toInstant())
+        val endDate = formatDate(todayDate.toInstant())
 
-        Unirest.put("https://app.absence.io/api/v2/timespans/$timeSpanId")
+        return Unirest.put("https://app.absence.io/api/v2/timespans/$timeSpanId")
                 .header("Authorization", putCredentials)
                 .header("Content-Type", "application/json")
                 .body(mapOf(
@@ -64,8 +64,8 @@ class ImpersonationService {
                 .asJson()
     }
 
-    private fun formatDate(instant:Instant):String{
-        return  DateTimeFormatter.ISO_INSTANT.format(instant.with(ChronoField.NANO_OF_SECOND , 0))
+    private fun formatDate(instant: Instant): String {
+        return DateTimeFormatter.ISO_INSTANT.format(instant.with(ChronoField.NANO_OF_SECOND, 0))
     }
 
     private fun getNewestTimespanIdForDate(todayDate: ZonedDateTime): String? {
@@ -95,7 +95,7 @@ class ImpersonationService {
                 .body(payload)
                 .asJson()
 
-        val timespanId:String?  = (response.body.`object`.get("data") as JSONArray).getJSONObject(0).get("_id") as String?
+        val timespanId: String? = (response.body.`object`.get("data") as JSONArray).getJSONObject(0).get("_id") as String?
         return timespanId
     }
 

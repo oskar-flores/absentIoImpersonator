@@ -10,10 +10,10 @@ class Pause : RequestHandler<Map<String, Any>, ApiGatewayResponse> {
         LOG.info("received: " + input.keys.toString())
         ImpersonationService.init()
         val service = ImpersonationService()
-        service.pause()
+        val response = service.pause()
 
         return ApiGatewayResponse.build {
-            statusCode = 200
+            statusCode = response?.status ?: 200
             objectBody = GatewayResponse("Started to work at: ", input)
             headers = mapOf("X-Powered-By" to "AWS Lambda & serverless")
         }
