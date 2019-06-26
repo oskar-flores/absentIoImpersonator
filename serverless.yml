@@ -33,7 +33,7 @@ functions:
     events:
       - http:
           path: /stop
-          method: post
+          method: put
           authorizer:
             type: COGNITO_USER_POOLS
             authorizerId:
@@ -47,7 +47,7 @@ functions:
     events:
       - http:
           path: /pause
-          method: put
+          method: post
           authorizer:
             type: COGNITO_USER_POOLS
             authorizerId:
