@@ -77,6 +77,8 @@ resources:
       Properties:
         ClientName: ${self:custom.userPoolClientName}
         GenerateSecret: False
+        ExplicitAuthFlows:
+          - "USER_PASSWORD_AUTH"
         UserPoolId:
           Ref: CognitoUserPool
     ApiGatewayAuthorizer:

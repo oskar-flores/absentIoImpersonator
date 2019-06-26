@@ -133,6 +133,5 @@ class ImpersonationService {
 fun main() {
     ImpersonationService.init()
     val service = ImpersonationService()
-    service.start(ImpersonationService.id,"work")
-
+    service.stop()
 }
