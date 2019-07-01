@@ -13,7 +13,7 @@ This is basically a kotlin lambda app, that has a congito authorizer, absent cre
 
 All is delployed via serverless
 
-
+![arch](arch.svg)
 
 
 # How
