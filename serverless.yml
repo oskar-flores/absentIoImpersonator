@@ -15,7 +15,7 @@ package:
 
 functions:
   start:
-    handler: com.serverless.Start
+    handler: com.serverless.lambdas.Start
     events:
       - http:
           path: /start
@@ -29,7 +29,7 @@ functions:
       id: ${ssm:absentIoId}
 
   stop:
-    handler: com.serverless.Stop
+    handler: com.serverless.lambdas.Stop
     events:
       - http:
           path: /stop
@@ -43,7 +43,7 @@ functions:
       id: ${ssm:absentIoId}
 
   pause:
-    handler: com.serverless.Pause
+    handler: com.serverless.lambdas.Pause
     events:
       - http:
           path: /pause
