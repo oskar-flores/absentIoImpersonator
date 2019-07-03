@@ -10,13 +10,10 @@ import org.apache.logging.log4j.LogManager
 
 class Start : RequestHandler<Map<String, Any>, ApiGatewayResponse> {
     override fun handleRequest(input: Map<String, Any>, context: Context): ApiGatewayResponse {
-        LOG.info("received: " + input.keys.toString())
+    
         ImpersonationService.init()
         val service = ImpersonationService()
         val response = service.start(ImpersonationService.id)
-        mapOf(
-                "body" to response?.body
-        )
         return ApiGatewayResponse.build {
             statusCode = response?.status ?: 200
             objectBody = GatewayResponse("Started to work at: ", mapOf("body" to response?.body.toString()))
