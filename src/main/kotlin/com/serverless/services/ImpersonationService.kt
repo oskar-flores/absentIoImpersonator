@@ -1,11 +1,13 @@
 package com.serverless.services
 
+import com.google.inject.internal.util.`$Strings`
 import com.mashape.unirest.http.HttpResponse
 import com.mashape.unirest.http.JsonNode
 import com.mashape.unirest.http.ObjectMapper
 import com.mashape.unirest.http.Unirest
-import com.serverless.CREATE_ENDPOINT
-import com.serverless.LIST_ENDPOINT
+import com.serverless.ABSENCE_LIST_ENDPOINT
+import com.serverless.TIMESPAN_CREATE_ENDPOINT
+import com.serverless.TIMESPAN_LIST_ENDPOINT
 import com.serverless.services.HawkManager.Companion.generateCredentials
 import org.json.JSONArray
 import org.json.JSONObject
@@ -28,9 +30,9 @@ class ImpersonationService {
                 .put("type",type)
 
 
-        val generateAuthorizationHeader = generateCredentials(CREATE_ENDPOINT, "post")
+        val generateAuthorizationHeader = generateCredentials(TIMESPAN_CREATE_ENDPOINT, "post")
 
-        val response = Unirest.post(CREATE_ENDPOINT)
+        val response = Unirest.post(TIMESPAN_CREATE_ENDPOINT)
                 .header("Authorization", generateAuthorizationHeader)
                 .header("Content-Type", "application/json")
                 .body(payload)
@@ -49,17 +51,43 @@ class ImpersonationService {
         val todayDate = ZonedDateTime.now(ZoneId.of("UTC"))
         val timeSpanId = getNewestTimespanIdForDate(todayDate)
 
-        val putCredentials = generateCredentials("$LIST_ENDPOINT/$timeSpanId", "put")
+        val putCredentials = generateCredentials("$TIMESPAN_LIST_ENDPOINT/$timeSpanId", "put")
         val endDate = formatDate(todayDate.toInstant())
 
         val payload = JSONObject()
         payload.put("end", endDate)
 
-        return Unirest.put("$LIST_ENDPOINT/$timeSpanId")
+        return Unirest.put("$TIMESPAN_LIST_ENDPOINT/$timeSpanId")
                 .header("Authorization", putCredentials)
                 .header("Content-Type", "application/json")
                 .body(payload)
                 .asJson()
+    }
+
+    fun bulkUpdateTimespan(start:String, end:String, skipAbsenceDays:Boolean=true){
+        if (skipAbsenceDays){
+            val gte = "\$gte"
+
+            /*
+            Get all of today, with newest first. Hopefully we get the ongoin the first
+             */
+            val payload = """{
+            "filter": {
+                "userId": "$id",
+                "start": {"$gte": "$start"}
+            }
+        }"""
+            val generateAuthorizationHeader = generateCredentials(ABSENCE_LIST_ENDPOINT, "put")
+
+            val response = Unirest.post(ABSENCE_LIST_ENDPOINT)
+                    .header("Authorization", generateAuthorizationHeader)
+                    .header("Content-Type", "application/json")
+                    .body(payload)
+                    .asJson()
+
+
+        }
+
     }
 
     private fun formatDate(instant: Instant): String {
@@ -85,9 +113,9 @@ class ImpersonationService {
             "skip": 0
         }"""
 
-        val generateAuthorizationHeader = generateCredentials(LIST_ENDPOINT, "post")
+        val generateAuthorizationHeader = generateCredentials(TIMESPAN_LIST_ENDPOINT, "post")
 
-        val response = Unirest.post(LIST_ENDPOINT)
+        val response = Unirest.post(TIMESPAN_LIST_ENDPOINT)
                 .header("Authorization", generateAuthorizationHeader)
                 .header("Content-Type", "application/json")
                 .body(payload)
